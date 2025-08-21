@@ -1,1 +1,207 @@
 
+body {margin:0;
+   padding:0;
+       background-color: #EDC7CF}
+
+#regular{background-color:white;
+         margin:10px;
+         padding:10px;
+        font: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica,
+        sans-serif;
+        font-size:20px;}
+#rightside{float:right}
+h1{font-size:60px}
+
+
+.topbar{
+position: relative;
+z-index: 2;
+border:none;
+border:0px;
+margin:0px;
+padding:0px;
+font: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica,
+  sans-serif;
+font-size:20px;
+font-weight:bold;}
+
+.topbar ul{
+background:#736B92;
+height:35px;
+list-style:none;
+margin:0;
+padding:0;}
+
+.topbar li{
+  float:left;
+  padding:0px;}
+
+.topbar li a{
+  background:#736B92 url("images/seperator.gif") bottom right no-repeat;
+  color:white;
+  display:block;
+  font-weight:bold;
+  line-height:35px;
+  margin:0px;
+  padding:0px 25px;
+  text-align:center;
+  text-decoration:none;}
+
+.topbar li a:hover, .topbar ul li:hover a{
+    position: relative;
+    background: white url("images/hover.gif") bottom center no-repeat;
+    font-weight:bold;
+    color:#736B92;
+    text-decoration:none;
+     z-index: 100001;}
+
+.topbar li ul{
+  background:#736B92;
+  display:none;
+  height:auto;
+  padding:0px;
+  margin:0px;
+  border:0px;
+  position:absolute;
+  width:225px;
+  z-index:200;
+  /*top:1em;
+  /*left:0;*/}
+
+.topbar li:hover ul{
+  display:block;}
+
+.topbar li li {
+  background:url('images/sub_sep.gif') bottom left no-repeat;
+  display:block;
+  float:none;
+  margin:0px;
+  padding:0px;
+  width:225px;}
+
+.topbar li:hover li a{
+  background:none;}
+
+.topbar li ul a{
+  display:block;
+  height:35px;
+  font-size:15px;
+  font-style:normal;
+  margin:0px;
+  padding:0px 10px 0px 15px;
+  text-align:left;}
+
+  .topbar li ul a:hover, .menu li ul li:hover a{
+    position: relative;
+    z-index:2;
+    background:#736B92 url('images/hover_sub.gif') center left no-repeat;
+    border:0px;
+    color:#ffffff;
+    text-decoration:none;
+    font-weight:bold}
+
+.menu p{
+  clear:left;
+  }
+
+
+
+.navbar {
+overflow: hidden;
+background-color: #736B92; 
+}
+
+.navbar a {
+float: left;
+font-size: 20px;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+.subnav {
+float: left;
+overflow: hidden;
+}
+
+.subnav .subnavbtn {
+font-size: 20px;  
+border: none;
+outline: none;
+color: white;
+padding: 14px 16px;
+background-color: inherit;
+font-family: inherit;
+margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+background-color: #EDC7CF;
+color: #736B92;
+}
+
+.subnav-content {
+display: none;
+position: absolute;
+left: 0;
+background-color: #EDC7CF;
+width: 100%;
+z-index: 1;
+}
+
+.subnav-content a {
+float: left;
+color: white;
+text-decoration: none;
+}
+
+.subnav-content a:hover {
+background-color: #eee;
+color: black;
+}
+
+.subnav:hover .subnav-content {
+display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px; 
+  padding: 20px;
+}
+
+.gallery-item {
+  width: 200px; 
+  text-align: center; 
+}
+
+.gallery-item img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s; 
+}
+
+/* Hover effect */
+.gallery-item img:hover {
+  transform: scale(1.1);  /* Slight zoom effect on hover */
+}
+
+/* Optional: Add style to the item names */
+.gallery-item p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
